@@ -10,6 +10,7 @@ import {
   StyleSheet, // css for react native
   Alert, // alert for react native
   Linking, // open url for react native
+  StatusBar, // status bar for react native
 } from "react-native";
 
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -111,6 +112,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1, backgroundColor: "#0D0D12" }}>
+        <StatusBar barStyle="light-content" />
         <ScrollView contentContainerStyle={s.scroll}>
           <Text style={s.title}>SolScan</Text>
           <Text style={s.subtitle}>Explore any Solana wallet</Text>
